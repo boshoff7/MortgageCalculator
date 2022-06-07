@@ -1,24 +1,211 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ras-uc-0l9">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Mortgage Calculator-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Mortgage_Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Purchase Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XTf-9z-Ye1">
+                                <rect key="frame" x="20" y="160" width="129" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Dad-fA-MDY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                <color key="textColor" red="0.9072962403" green="0.51725673679999995" blue="0.23519927260000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deposit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HPq-BH-oGb">
+                                <rect key="frame" x="20" y="220" width="70" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="EsC-Yq-p25"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                <color key="textColor" red="0.9072962403" green="0.51725673679999995" blue="0.23519927260000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interest Rate (%)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Utj-ch-1m2">
+                                <rect key="frame" x="20" y="280" width="145" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="uuc-1M-cYa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                <color key="textColor" red="0.9072962403" green="0.51725673679999995" blue="0.23519927260000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loan Term (Years)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JLZ-Az-3f7">
+                                <rect key="frame" x="20" y="340" width="156" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2Zf-Sm-o6k"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                <color key="textColor" red="0.9072962403" green="0.51725673679999995" blue="0.23519927260000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fHR-aa-CcL">
+                                <rect key="frame" x="284" y="160" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Q1M-I5-5r8"/>
+                                    <constraint firstAttribute="height" constant="30" id="vjG-Wt-9CF"/>
+                                </constraints>
+                                <color key="textColor" red="0.77060371640000003" green="0.2022210062" blue="0.31764224169999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Boc-ko-RSj">
+                                <rect key="frame" x="284" y="220" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="4XQ-n9-bod"/>
+                                    <constraint firstAttribute="height" constant="30" id="rJT-Gf-jYw"/>
+                                </constraints>
+                                <color key="textColor" red="0.77060371640000003" green="0.2022210062" blue="0.31764224169999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SxP-6B-8gV">
+                                <rect key="frame" x="284" y="280" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="X29-dz-TRq"/>
+                                    <constraint firstAttribute="height" constant="30" id="YLv-ZD-nfc"/>
+                                </constraints>
+                                <color key="textColor" red="0.77060371640000003" green="0.2022210062" blue="0.31764224169999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="5" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pOc-lr-oe2">
+                                <rect key="frame" x="284" y="340" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="BOY-P5-nGV"/>
+                                    <constraint firstAttribute="height" constant="30" id="u6j-Nm-tmS"/>
+                                </constraints>
+                                <color key="textColor" red="0.77060371640000003" green="0.2022210062" blue="0.31764224169999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="354-Ou-6Em">
+                                <rect key="frame" x="279" y="472" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="5" maxValue="30" translatesAutoresizingMaskIntoConstraints="NO" id="eIw-jX-wIA">
+                                <rect key="frame" x="18" y="390" width="378" height="31"/>
+                                <color key="minimumTrackTintColor" red="0.9072962403" green="0.51725673679999995" blue="0.23519927260000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="maximumTrackTintColor" red="0.77060371640000003" green="0.2022210062" blue="0.31764224169999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="sliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Ara-Pe-BpO"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IbT-eK-IjP">
+                                <rect key="frame" x="30" y="722" width="354" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="l3l-TH-j7F"/>
+                                </constraints>
+                                <color key="tintColor" red="0.9072962403" green="0.51725673679999995" blue="0.23519927260000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="CALCULATE">
+                                    <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
+                                    <color key="baseForegroundColor" red="0.9072962403" green="0.51725673679999995" blue="0.23519927260000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.9072962403" green="0.51725673679999995" blue="0.23519927260000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="calculateTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vez-OM-aGZ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monthly Payment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y5a-NC-7nP">
+                                <rect key="frame" x="20" y="470" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="cbM-ZV-SvW"/>
+                                    <constraint firstAttribute="width" constant="200" id="z9Z-pZ-4WB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                <color key="textColor" red="0.77060371640000003" green="0.2022210062" blue="0.31764224169999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kwI-V9-2e5">
+                                <rect key="frame" x="234" y="470" width="150" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="QqJ-b2-IDa"/>
+                                    <constraint firstAttribute="height" constant="30" id="xYz-M0-ZYD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                <color key="textColor" red="0.9072962403" green="0.51725673679999995" blue="0.23519927260000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.99055403470000003" green="0.97646206619999998" blue="0.69014555219999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="JLZ-Az-3f7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="1JB-qm-zr1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Boc-ko-RSj" secondAttribute="trailing" constant="30" id="3Oe-a4-TdN"/>
+                            <constraint firstItem="kwI-V9-2e5" firstAttribute="top" secondItem="eIw-jX-wIA" secondAttribute="bottom" constant="50" id="4Bp-so-qgG"/>
+                            <constraint firstItem="SxP-6B-8gV" firstAttribute="top" secondItem="Boc-ko-RSj" secondAttribute="bottom" constant="30" id="5ao-RA-mZa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SxP-6B-8gV" secondAttribute="trailing" constant="30" id="6Xy-M1-umY"/>
+                            <constraint firstItem="eIw-jX-wIA" firstAttribute="top" secondItem="JLZ-Az-3f7" secondAttribute="bottom" constant="20" id="AGp-Rn-lwr"/>
+                            <constraint firstItem="fHR-aa-CcL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="CJU-kL-NVA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kwI-V9-2e5" secondAttribute="trailing" constant="30" id="CZu-cX-gXf"/>
+                            <constraint firstItem="y5a-NC-7nP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Hwd-D8-HAu"/>
+                            <constraint firstItem="y5a-NC-7nP" firstAttribute="top" secondItem="eIw-jX-wIA" secondAttribute="bottom" constant="50" id="IfF-ra-Qmk"/>
+                            <constraint firstItem="IbT-eK-IjP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="IgV-zv-Xih"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eIw-jX-wIA" secondAttribute="trailing" constant="20" id="IkD-Rj-7cU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IbT-eK-IjP" secondAttribute="bottom" constant="70" id="J70-JP-4MU"/>
+                            <constraint firstItem="XTf-9z-Ye1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="MPQ-61-SOO"/>
+                            <constraint firstItem="Boc-ko-RSj" firstAttribute="top" secondItem="fHR-aa-CcL" secondAttribute="bottom" constant="30" id="Mnr-64-qYc"/>
+                            <constraint firstItem="XTf-9z-Ye1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="PcI-hr-yA1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IbT-eK-IjP" secondAttribute="trailing" constant="30" id="bj1-SW-vN0"/>
+                            <constraint firstItem="pOc-lr-oe2" firstAttribute="top" secondItem="SxP-6B-8gV" secondAttribute="bottom" constant="30" id="c2K-SH-5Vk"/>
+                            <constraint firstItem="HPq-BH-oGb" firstAttribute="top" secondItem="XTf-9z-Ye1" secondAttribute="bottom" constant="30" id="czF-WM-Awa"/>
+                            <constraint firstItem="HPq-BH-oGb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="gz4-S5-DEj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pOc-lr-oe2" secondAttribute="trailing" constant="30" id="hun-Ye-fQ9"/>
+                            <constraint firstItem="Utj-ch-1m2" firstAttribute="top" secondItem="HPq-BH-oGb" secondAttribute="bottom" constant="30" id="mcj-gI-nVf"/>
+                            <constraint firstItem="JLZ-Az-3f7" firstAttribute="top" secondItem="Utj-ch-1m2" secondAttribute="bottom" constant="30" id="suP-Tv-f4H"/>
+                            <constraint firstItem="Utj-ch-1m2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="tU3-E7-tc0"/>
+                            <constraint firstItem="eIw-jX-wIA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ulq-5Z-VaP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fHR-aa-CcL" secondAttribute="trailing" constant="30" id="zbv-2k-sDL"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Mortgage Calculator" id="UC6-4U-j1V"/>
+                    <connections>
+                        <outlet property="depositTextField" destination="Boc-ko-RSj" id="1ML-Fp-Qz4"/>
+                        <outlet property="interestTextField" destination="SxP-6B-8gV" id="UvU-sS-YTD"/>
+                        <outlet property="loanTermLabel" destination="354-Ou-6Em" id="HSx-mo-d6C"/>
+                        <outlet property="loanTermTextField" destination="pOc-lr-oe2" id="z5f-I0-Be3"/>
+                        <outlet property="purchasePriceTextField" destination="fHR-aa-CcL" id="2FA-Vl-qTT"/>
+                        <outlet property="resultLabel" destination="kwI-V9-2e5" id="xK6-U6-OY8"/>
+                        <outlet property="yearsSlider" destination="eIw-jX-wIA" id="bkS-Me-dRC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="979.71014492753636" y="117.85714285714285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="94D-NL-6If">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ras-uc-0l9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="7uW-8h-Wlc">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="gVB-bZ-sbr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ExR-19-vyq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="69.565217391304358" y="117.85714285714285"/>
         </scene>
     </scenes>
 </document>

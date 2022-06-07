@@ -14,6 +14,7 @@
 		C2E9B72F284F6C85000592DA /* Mortgage_Calculator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C2E9B72D284F6C85000592DA /* Mortgage_Calculator.xcdatamodeld */; };
 		C2E9B731284F6C8C000592DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2E9B730284F6C8C000592DA /* Assets.xcassets */; };
 		C2E9B734284F6C8C000592DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2E9B732284F6C8C000592DA /* LaunchScreen.storyboard */; };
+		C2E9B73C284F6EAC000592DA /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E9B73B284F6EAC000592DA /* Calculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		C2E9B730284F6C8C000592DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2E9B733284F6C8C000592DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C2E9B735284F6C8C000592DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2E9B73B284F6EAC000592DA /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				C2E9B724284F6C85000592DA /* AppDelegate.swift */,
 				C2E9B726284F6C85000592DA /* SceneDelegate.swift */,
 				C2E9B728284F6C85000592DA /* ViewController.swift */,
+				C2E9B73B284F6EAC000592DA /* Calculator.swift */,
 				C2E9B72A284F6C85000592DA /* Main.storyboard */,
 				C2E9B730284F6C8C000592DA /* Assets.xcassets */,
 				C2E9B732284F6C8C000592DA /* LaunchScreen.storyboard */,
@@ -144,6 +147,7 @@
 				C2E9B729284F6C85000592DA /* ViewController.swift in Sources */,
 				C2E9B725284F6C85000592DA /* AppDelegate.swift in Sources */,
 				C2E9B72F284F6C85000592DA /* Mortgage_Calculator.xcdatamodeld in Sources */,
+				C2E9B73C284F6EAC000592DA /* Calculator.swift in Sources */,
 				C2E9B727284F6C85000592DA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
