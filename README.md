@@ -11,5 +11,3 @@ Skills Learnt:
 - Using the pow() function in the mortgage payment formula.
 
 <img width="448" alt="Screenshot 2022-06-09 at 09 35 07" src="https://user-images.githubusercontent.com/91250039/172791588-cc5bd57f-d913-4fbf-a242-7e25c4318c08.png">
-
-![Screenshot 2022-06-09 at 09 23 39](https://user-images.githubusercontent.com/91250039/172789241-df8550b5-3914-44b7-8be3-e8b82227d04a.png)
