@@ -4,7 +4,7 @@ A basic mortgage monthly payment calculator.
 
 Problems encountered:
 - UI is very basic, therefore setting up the textfields and labels were straight forward.
-- Setting up the calculation and the conversion of Strings to Doubles and visa versa, were the only slightly challenging components of the app.
+- Setting up the calculation and the conversion of Strings to Doubles and vice versa, were the only slightly challenging components of the app.
 
 Skills Learnt:
 - Incorporating a UISlider and using it to adjust the value in a text field.
