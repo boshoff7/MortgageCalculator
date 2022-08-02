@@ -24,8 +24,9 @@ class Calculator {
         let totalInterest = 1 + ((interest / 100) / 12)
         let totalLoanTerm = loanTerm * 12
         let final = pow(totalInterest, totalLoanTerm)
+        print(" Final is \(final)")
         
-        return final
+        return final //1.00833333333
     }
     
     func interestTwo(interest: Double, loanTerm: Double) -> Double {
@@ -34,6 +35,7 @@ class Calculator {
         let totalLoanTerm = loanTerm * 12
         let final = pow(totalInterest, totalLoanTerm)
         let answer = final - 1
+        print("Answer is \(answer)")
         
         return answer
     }

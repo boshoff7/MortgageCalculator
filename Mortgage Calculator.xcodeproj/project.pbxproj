@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C2347D582899129200602909 /* Mortgage_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2347D572899129200602909 /* Mortgage_CalculatorTests.swift */; };
 		C2E9B725284F6C85000592DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E9B724284F6C85000592DA /* AppDelegate.swift */; };
 		C2E9B727284F6C85000592DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E9B726284F6C85000592DA /* SceneDelegate.swift */; };
 		C2E9B729284F6C85000592DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E9B728284F6C85000592DA /* ViewController.swift */; };
@@ -17,7 +18,19 @@
 		C2E9B73C284F6EAC000592DA /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E9B73B284F6EAC000592DA /* Calculator.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		C2347D592899129300602909 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2E9B719284F6C85000592DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C2E9B720284F6C85000592DA;
+			remoteInfo = "Mortgage Calculator";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		C2347D552899129200602909 /* Mortgage CalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mortgage CalculatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2347D572899129200602909 /* Mortgage_CalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mortgage_CalculatorTests.swift; sourceTree = "<group>"; };
 		C2E9B721284F6C85000592DA /* Mortgage Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mortgage Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2E9B724284F6C85000592DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2E9B726284F6C85000592DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,6 +44,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		C2347D522899129200602909 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C2E9B71E284F6C85000592DA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -41,10 +61,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C2347D562899129200602909 /* Mortgage CalculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				C2347D572899129200602909 /* Mortgage_CalculatorTests.swift */,
+			);
+			path = "Mortgage CalculatorTests";
+			sourceTree = "<group>";
+		};
 		C2E9B718284F6C85000592DA = {
 			isa = PBXGroup;
 			children = (
 				C2E9B723284F6C85000592DA /* Mortgage Calculator */,
+				C2347D562899129200602909 /* Mortgage CalculatorTests */,
 				C2E9B722284F6C85000592DA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				C2E9B721284F6C85000592DA /* Mortgage Calculator.app */,
+				C2347D552899129200602909 /* Mortgage CalculatorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,6 +106,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		C2347D542899129200602909 /* Mortgage CalculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2347D5D2899129300602909 /* Build configuration list for PBXNativeTarget "Mortgage CalculatorTests" */;
+			buildPhases = (
+				C2347D512899129200602909 /* Sources */,
+				C2347D522899129200602909 /* Frameworks */,
+				C2347D532899129200602909 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C2347D5A2899129300602909 /* PBXTargetDependency */,
+			);
+			name = "Mortgage CalculatorTests";
+			productName = "Mortgage CalculatorTests";
+			productReference = C2347D552899129200602909 /* Mortgage CalculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		C2E9B720284F6C85000592DA /* Mortgage Calculator */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C2E9B738284F6C8C000592DA /* Build configuration list for PBXNativeTarget "Mortgage Calculator" */;
@@ -103,6 +151,10 @@
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
+					C2347D542899129200602909 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = C2E9B720284F6C85000592DA;
+					};
 					C2E9B720284F6C85000592DA = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
@@ -122,11 +174,19 @@
 			projectRoot = "";
 			targets = (
 				C2E9B720284F6C85000592DA /* Mortgage Calculator */,
+				C2347D542899129200602909 /* Mortgage CalculatorTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		C2347D532899129200602909 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C2E9B71F284F6C85000592DA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -140,6 +200,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		C2347D512899129200602909 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2347D582899129200602909 /* Mortgage_CalculatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C2E9B71D284F6C85000592DA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -153,6 +221,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C2347D5A2899129300602909 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C2E9B720284F6C85000592DA /* Mortgage Calculator */;
+			targetProxy = C2347D592899129300602909 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C2E9B72A284F6C85000592DA /* Main.storyboard */ = {
@@ -174,6 +250,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		C2347D5B2899129300602909 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BL54WB62T6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.boshoffcorp.Mortgage-CalculatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mortgage Calculator.app/Mortgage Calculator";
+			};
+			name = Debug;
+		};
+		C2347D5C2899129300602909 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BL54WB62T6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.boshoffcorp.Mortgage-CalculatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mortgage Calculator.app/Mortgage Calculator";
+			};
+			name = Release;
+		};
 		C2E9B736284F6C8C000592DA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -347,6 +459,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C2347D5D2899129300602909 /* Build configuration list for PBXNativeTarget "Mortgage CalculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2347D5B2899129300602909 /* Debug */,
+				C2347D5C2899129300602909 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C2E9B71C284F6C85000592DA /* Build configuration list for PBXProject "Mortgage Calculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

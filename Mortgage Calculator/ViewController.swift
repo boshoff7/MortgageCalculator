@@ -50,7 +50,7 @@ class ViewController: UIViewController {
         {
             let result = calculator.calculate(price: price, deposit: deposit, interest: interest, loanTerm: loanTerm)
             print(result)
-            //resultLabel.text = String(result)
+           
             resultLabel.text = String(format: "%.2f", result)
             
         }
